@@ -1,4 +1,0 @@
-[submodule "bordeaux-main"]
-	path = bordeaux-main
-	url = https://github.com/frc2468/bordeaux.git
-	branch = nonholo-template

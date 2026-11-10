@@ -104,6 +104,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Drive" Type="Folder" URL="../Drive">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Paths" Type="Folder" URL="../Paths">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Framework" Type="Folder" URL="../Framework">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -149,14 +152,21 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Destination[2].destName" Type="Str">Bordeaux Paths</Property>
+				<Property Name="Destination[2].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
+				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Source[0].itemID" Type="Str">{8D69DA3D-C138-440B-ADFD-DF8F2E0AE8F2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Target/Robot Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/Target/Paths/Forward-to-Tag.bdx</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">AlwaysInclude</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="TgtF_internalName" Type="Str">FRC Robot Boot-up Deployment</Property>
